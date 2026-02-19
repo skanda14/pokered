@@ -5,7 +5,7 @@ TypeEffects:
 	db FIRE,         ICE,          SUPER_EFFECTIVE
 	db GRASS,        WATER,        SUPER_EFFECTIVE
 	db ELECTRIC,     WATER,        SUPER_EFFECTIVE
-	db WATER,        ROCK,         SUPER_EFFECTIVE
+	db POISON,       ELECTRIC,     SUPER_EFFECTIVE
 	db GROUND,       FLYING,       NO_EFFECT
 	db WATER,        WATER,        NOT_VERY_EFFECTIVE
 	db FIRE,         FIRE,         NOT_VERY_EFFECTIVE
@@ -30,7 +30,7 @@ TypeEffects:
 	db GRASS,        POISON,       NOT_VERY_EFFECTIVE
 	db GRASS,        ROCK,         SUPER_EFFECTIVE
 	db GRASS,        FLYING,       NOT_VERY_EFFECTIVE
-	db ICE,          WATER,        NOT_VERY_EFFECTIVE
+	db WATER,        ICE,          NOT_VERY_EFFECTIVE
 	db ICE,          GRASS,        SUPER_EFFECTIVE
 	db ICE,          GROUND,       SUPER_EFFECTIVE
 	db ICE,          FLYING,       SUPER_EFFECTIVE
@@ -45,7 +45,7 @@ TypeEffects:
 	db POISON,       GRASS,        SUPER_EFFECTIVE
 	db POISON,       POISON,       NOT_VERY_EFFECTIVE
 	db POISON,       GROUND,       NOT_VERY_EFFECTIVE
-	db POISON,       BUG,          SUPER_EFFECTIVE
+	db GROUND,       ICE,          NOT_VERY_EFFECTIVE
 	db POISON,       ROCK,         NOT_VERY_EFFECTIVE
 	db POISON,       GHOST,        NOT_VERY_EFFECTIVE
 	db GROUND,       FIRE,         SUPER_EFFECTIVE
@@ -67,7 +67,7 @@ TypeEffects:
 	db BUG,          FLYING,       NOT_VERY_EFFECTIVE
 	db BUG,          PSYCHIC_TYPE, SUPER_EFFECTIVE
 	db BUG,          GHOST,        NOT_VERY_EFFECTIVE
-	db BUG,          POISON,       SUPER_EFFECTIVE
+	db PSYCHIC_TYPE, BUG,          NOT_VERY_EFFECTIVE
 	db ROCK,         FIRE,         SUPER_EFFECTIVE
 	db ROCK,         FIGHTING,     NOT_VERY_EFFECTIVE
 	db ROCK,         GROUND,       NOT_VERY_EFFECTIVE
@@ -75,11 +75,12 @@ TypeEffects:
 	db ROCK,         BUG,          SUPER_EFFECTIVE
 	db ROCK,         ICE,          SUPER_EFFECTIVE
 	db GHOST,        NORMAL,       NO_EFFECT
-	db GHOST,        PSYCHIC_TYPE, NO_EFFECT
+	db GHOST,        PSYCHIC_TYPE, SUPER_EFFECTIVE
 	db FIRE,         DRAGON,       NOT_VERY_EFFECTIVE
 	db WATER,        DRAGON,       NOT_VERY_EFFECTIVE
 	db ELECTRIC,     DRAGON,       NOT_VERY_EFFECTIVE
 	db GRASS,        DRAGON,       NOT_VERY_EFFECTIVE
 	db ICE,          DRAGON,       SUPER_EFFECTIVE
 	db DRAGON,       DRAGON,       SUPER_EFFECTIVE
+	db DRAGON,       ICE,          NOT_VERY_EFFECTIVE
 	db -1 ; end
